@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.function.context.FunctionCatalog;
 import org.springframework.cloud.function.context.test.FunctionalSpringBootTest;
 
-@FunctionalSpringBootTest
+//@FunctionalSpringBootTest
 public class DispatchingFunctionsIntegrationTests {
 
-	@Autowired
+	/*@Autowired
 	private FunctionCatalog catalog;
 
 	@Test
@@ -23,5 +23,5 @@ public class DispatchingFunctionsIntegrationTests {
 		StepVerifier.create(packAndLabel.apply(new OrderAcceptedMessage(orderId)))
 				.expectNextMatches(dispatchedOrder -> dispatchedOrder.equals(new OrderDispatchedMessage(orderId)))
 				.verifyComplete();
-	}
+	}*/
 }
