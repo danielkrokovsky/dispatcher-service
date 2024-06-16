@@ -1,8 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-06-15T18:40:27" hostname="MacBook-Pro-de-Daniel.local" time="0.002">
-  <properties/>
-  <testcase name="contextLoads()" classname="com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests" time="0.002">
-    <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - FunctionsStreamIntegrationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>FunctionsStreamIntegrationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.polarbookshop.dispatcherservice.html">com.polarbookshop.dispatcherservice</a> &gt; FunctionsStreamIntegrationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.005s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="whenOrderAcceptedThenDispatched()"></a>
+<h3 class="failures">whenOrderAcceptedThenDispatched()</h3>
+<span class="code">
+<pre>java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
 	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
@@ -111,25 +185,48 @@ Caused by: org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostPro
 	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
 	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
 	... 87 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[15:40:27.209 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-15:40:27.209 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-15:40:27.210 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-15:40:27.210 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests], using SpringBootContextLoader
-15:40:27.210 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests]: class path resource [com/polarbookshop/dispatcherservice/DispatcherServiceApplicationTests-context.xml] does not exist
-15:40:27.211 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests]: class path resource [com/polarbookshop/dispatcherservice/DispatcherServiceApplicationTestsContext.groovy] does not exist
-15:40:27.211 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-15:40:27.211 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests]: DispatcherServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-15:40:27.212 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests]
-15:40:27.213 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.polarbookshop.dispatcherservice.DispatcherServiceApplication for test class com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests
-15:40:27.214 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests]: using defaults.
-15:40:27.214 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-15:40:27.214 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-15:40:27.215 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5cdf39b2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@14f3c6fc, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3cd59ef5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@33b082c5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@16073fa8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1cc9cfb2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@cfbc8e8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bead518, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@14bf57b2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@46d9aec8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@14379273, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7918c7f8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@17740dae, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c504e66]
-15:40:27.215 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@345cf395 testClass = DispatcherServiceApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@bc4d5e1 testClass = DispatcherServiceApplicationTests, locations = '{}', classes = '{class com.polarbookshop.dispatcherservice.DispatcherServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@666b83a4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@37bd68c3, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30990c1b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e1d8f9e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@73ff4fae, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1cd629b3], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-15:40:27.216 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@345cf395 testClass = DispatcherServiceApplicationTests, testInstance = com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests@3c6aa04a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@bc4d5e1 testClass = DispatcherServiceApplicationTests, locations = '{}', classes = '{class com.polarbookshop.dispatcherservice.DispatcherServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@666b83a4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@37bd68c3, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30990c1b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e1d8f9e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@73ff4fae, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1cd629b3], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
-15:40:27.252 [Test worker] DEBUG org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - Application failed to start due to an exception
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">whenOrderAcceptedThenDispatched()</td>
+<td class="failures">0.005s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:40:26.674 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:40:26.682 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:40:26.708 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:40:26.717 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests], using SpringBootContextLoader
+15:40:26.719 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests]: class path resource [com/polarbookshop/dispatcherservice/FunctionsStreamIntegrationTests-context.xml] does not exist
+15:40:26.720 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests]: class path resource [com/polarbookshop/dispatcherservice/FunctionsStreamIntegrationTestsContext.groovy] does not exist
+15:40:26.720 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:40:26.721 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests]: FunctionsStreamIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:40:26.760 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests]
+15:40:26.805 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/daniel/Documents/codigo_fonte/dispatcher-service/build/classes/java/main/com/polarbookshop/dispatcherservice/DispatcherServiceApplication.class]
+15:40:26.808 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.polarbookshop.dispatcherservice.DispatcherServiceApplication for test class com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests
+15:40:26.913 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests]: using defaults.
+15:40:26.914 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:40:26.927 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+15:40:26.935 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@308a6984, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@66b72664, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a34b7b8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@58cd06cb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3be8821f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@64b31700, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b65e559, org.springframework.test.context.event.EventPublishingTestExecutionListener@bae47a0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@74a9c4b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@85ec632, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1c05a54d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@65ef722a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5fd9b663, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@214894fc]
+15:40:26.939 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3add81c4 testClass = FunctionsStreamIntegrationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1a1d3c1a testClass = FunctionsStreamIntegrationTests, locations = '{}', classes = '{class com.polarbookshop.dispatcherservice.DispatcherServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@666b83a4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@37bd68c3, [ImportsContextCustomizer@1c65121 key = [org.springframework.cloud.stream.binder.test.TestChannelBinderConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30990c1b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e1d8f9e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@73ff4fae, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1cd629b3], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+15:40:26.955 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@3add81c4 testClass = FunctionsStreamIntegrationTests, testInstance = com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests@3b582111, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1a1d3c1a testClass = FunctionsStreamIntegrationTests, locations = '{}', classes = '{class com.polarbookshop.dispatcherservice.DispatcherServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@666b83a4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@37bd68c3, [ImportsContextCustomizer@1c65121 key = [org.springframework.cloud.stream.binder.test.TestChannelBinderConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30990c1b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e1d8f9e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@73ff4fae, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1cd629b3], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
+15:40:27.185 [Test worker] DEBUG org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - Application failed to start due to an exception
 org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor$ImportException: No spring.config.import set
 	at org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor.postProcessEnvironment(ConfigDataMissingEnvironmentPostProcessor.java:82)
 	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:102)
@@ -236,7 +333,7 @@ org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostProcessor$Impo
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:66)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-15:40:27.255 [Test worker] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+15:40:27.190 [Test worker] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -253,7 +350,7 @@ Add a spring.config.import=configserver: property to your configuration.
 	To disable this check, set spring.cloud.config.enabled=false or 
 	spring.cloud.config.import-check.enabled=false.
 
-15:40:27.256 [Test worker] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@33b082c5] to prepare test instance [com.polarbookshop.dispatcherservice.DispatcherServiceApplicationTests@3c6aa04a]
+15:40:27.192 [Test worker] ERROR org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@58cd06cb] to prepare test instance [com.polarbookshop.dispatcherservice.FunctionsStreamIntegrationTests@3b582111]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -363,7 +460,20 @@ Caused by: org.springframework.cloud.commons.ConfigDataMissingEnvironmentPostPro
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
 	... 87 common frames omitted
-15:40:27.263 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@345cf395 testClass = DispatcherServiceApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@bc4d5e1 testClass = DispatcherServiceApplicationTests, locations = '{}', classes = '{class com.polarbookshop.dispatcherservice.DispatcherServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@666b83a4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@37bd68c3, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30990c1b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e1d8f9e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@73ff4fae, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1cd629b3], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
+15:40:27.208 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@3add81c4 testClass = FunctionsStreamIntegrationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1a1d3c1a testClass = FunctionsStreamIntegrationTests, locations = '{}', classes = '{class com.polarbookshop.dispatcherservice.DispatcherServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@666b83a4, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@37bd68c3, [ImportsContextCustomizer@1c65121 key = [org.springframework.cloud.stream.binder.test.TestChannelBinderConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@30990c1b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6e1d8f9e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@73ff4fae, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@1cd629b3], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 15 de jun. de 2024 15:40:27</p>
+</div>
+</div>
+</body>
+</html>
